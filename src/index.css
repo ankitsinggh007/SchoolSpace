@@ -1,13 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 5px;
+  background-color:#f9fcfe;
+overflow-x: hidden;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9fcfe;
+  justify-content: space-between;
+}
+.nav{
+  display: flex;
+  height: 10vh;
+  background-color: #f9fcfe;
+  width: 98.5%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Students{
+  color: #242424;
+  font-family: Montserrat;
+  font-size: 27px;
+  font-weight: 700;
+  margin-left: 39px;
+  letter-spacing: 1px;
+}
+.table{
+  display: flex;
+  flex-direction: column;
+  width: 74.2vw;
+  background-color: #f9fcfe;
+  margin-right: 30px;
+  z-index: 1;
+}
+.sideBar{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color:#ffffff;
+  padding-top: 20px;
+  margin: -10px;
+  width: 22vw;
+  height: auto;
+  padding-bottom: 30px;
+  position: relative;
+  border-radius: 5px;
+  z-index: 1;
+}
+.line{
+width: 240px;
+background: #D3D6DB;
+border:1px solid #D3D6DB;
+line-height: 40px;
+
+}
+.logoname{ 
+font-family: 'Passion One';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+text-align: center;
+color: #2CA4D8;
+display: inline-block;
+
+}
+.logo{
+margin-left: 20px;
+margin-right: 15px;
+margin-bottom: 25px;
+display: inline-block;
+width: 60px;
+height: 48px;
+background: #FFBF3F;
+border-radius: 8px;
+}
+.logo img{
+  margin-left:30%;
+  margin-top:20%;
+}
+.items{
+  display: flex;
+ flex-direction: row;
+  height: 40px; 
+ width: 240px;
+ margin-top: 15px;
+ border-radius: 10px;
+ list-style: none;
+}
+ul{
+margin:10px ;
+}
+.icon{
+position: relative;  
+height:70% ;
+margin-top:5px ;
+}
+.menucap{
+  position: absolute;
+  left: 25%;
+  width: 65%;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size:25px;
+  margin-top: 0px;
+  padding-left: 5%;
+  color: #2CA4D8;
+  font-family: Montserrat;
+  margin-left: 21px;
+}
+.subicon{
+position: absolute;
+left: 13%;
+top: 32%;
+height: 2%;
+}
+.icon:active{
+  color: blue;
+}
+.subicon-re{
+  height: 12px;
+  position: relative;
+  top: 10%;
+  right: 19px;
+}
+.subicon-no{
+  position: relative;
+  top: 60%;
+  right: 25px;
+}
+.button{
+  height: 42px;
+  width: 123px;
+  border-style: none;
+  border-radius: 10px;
+  padding: 8px, 32px, 8px, 32px;
+  background: #2CA4D8;
+  color: #FFFFFF;
+  font-family:Roboto;
+  font-weight: 500;
+  Line-height:26px;
+}
+.subTable{
+  height: 85%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 96%;
+  margin-left:3% ;
+  border-radius: 10px;
+  background-color: #ffffff;
+
+}
+.highlight{
+background-color:#F1F4F8;
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+position: relative;
+height: 34px;
+border-radius: 10px 10px 0px 0px;
+font-family: Montserrat;
+color:#242424;
+font-size: 14px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+}
+.Stu_content{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+width: 99.8%;
+height: 50px;
+border: 0.1px solid #E4E8EE;
+background-color: #ffffff;
+font-family: Montserrat;
+font-size: 17px;
+font-weight: 800;
+line-height: 18px;
+letter-spacing: 1px;
+text-align: left;
+}
+.icon img{
+  position: relative;
+  left:70vh ;
+  top: 1vh;
+  margin-left: 20px;
+} 
+.Stu_content:hover{
+  background-color: whitesmoke;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Stu_content .Stu_no{
+  position: absolute;
+  left: 33.5%;
+
+}
+
+.Stu_content .Stu_name{
+  position: absolute;
+  left: 42.5%;
+}
+.Stu_content .Stu_Class{
+  position: absolute;
+ left:56.5%;
+}
+.Stu_content .Stu_Result{
+  position: absolute;
+  border-style: none;
+  width: 5%;
+  height: 3.5%;
+  padding-top: 7px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: -2px;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  left:65%;
+}
+.Stu_content .Stu_score{
+  position: absolute;
+ left:76.3%;
+}
+.Stu_content .Stu_grade{
+  position: absolute;
+ left:86.5%;
+}
+.showing{
+position: relative;
+top: 10px;
+left: 3%;
+font-family: Montserrat;
+font-size: 15px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.rounded-image{
+  background-image: url("https://qph.cf2.quoracdn.net/main-qimg-025c4b92696d130d537185aad9d7d742-lq");
+  background-size: cover;
+  height: 57px;
+  width: 57px;
+  margin-top:10% ;
+  border-radius: 50%;
+  
+}
+.info{
+  margin-top: -10px;
+  margin-left: 10%;
+}
+.name{
+  font-family:Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  margin-top:4% ;
+  line-height: 18px;
+  color: #242424;
+}
+.email{
+  font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+margin-top: 7px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.profile{
+font-family: Montserrat;
+font-size: 17px;
+font-weight: 600;
+color: #2CA4D8;
+letter-spacing: 1px;
+text-align: center;
+height:34px;
+width:70%;
+border: 1px solid #2CA4D8;
+margin-top: 10px;
+border-radius: 10px;
+padding-top:8px;
+}
+.profile:hover{
+  background-color:#2CA4D8 ;
+  color: whitesmoke;
+}
+.Card{
+  border: 1px solid green;
+height:auto;
+width:480px;
+position: fixed;
+left: 36%;
+padding: 15px;
+top: 5%;
+border: 1px solid black;
+background-color:#ffffff;
+border-radius: 10px;
+z-index: 100;
+}
+.backdrop{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.7);
+  z-index: 80;
+}
+.caption_form{
+font-family: Montserrat;
+color: #333333;
+font-size: 20px;
+font-weight: 900;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.lines{
+  margin-top: 40px;
+  /* margin-bottom: 20px; */
+  border: 1px solid #E4E8EE;
+}
+form{
+  font-family: Montserrat;
+font-size: 12px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0.02em;
+text-align: left;
+}
+.input{
+  height: 25px;
+width: 404px;
+left: 14px;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: left;
+color:  #333333;
+border-radius: 5px;
+display: block;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+.invalid{
+  height: 25px;
+  width: 404px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:  #333333;
+  border: 1px solid red;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.Results{
+  margin-top: 5%;
+border: 1px solid black;
+}
+.actions{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40%;
+  width: 55%;
+}
+.sub_results{
+  width: 100px;
+  height: 25px;
+  color: whitesmoke;
+  padding-top:10px ;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Remove .caption{
+  font-weight:bolder ;
+  font-size: large;
+  font-family: Montserrat;
+}
+.Remove .disclaimer{
+  font-weight: 700;
+  width: 80%;
+  font-family:Montserrat ;
+  line-height: -2px;
+}
+.Remove .form{
+  font-family:Montserrat ;
+  font-size: 10px;
+  font-weight: 800;
+  color:#7F878A;
+}
+.Remove .ans{
+  font-family:Montserrat ;
+  font-weight: 800;
+
+  color:black;
+
+}
+.button_container{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.button_container button{
+  margin-left: 10px;
+}
+.button_container .Remove{
+  margin-left: 10px;
+background-color: #F24643;
+}
+button:hover{
+  background-color:black;
+}
+.link{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    text-decoration: none;
+ 
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  
+}
+.link:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+}
+.subgrade{
+  margin-top:10px
 }
